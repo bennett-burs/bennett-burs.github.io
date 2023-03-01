@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Istok+Web&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <title>ResCon2.0</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="#home"><img src="logo.png" alt="rescon2.0"
+                        style="width: 250px;height: 55px;padding-top: 10px;"></a>
+            </div>
+            <div class="mobile-button">
+                <span style="float: right;" onclick="toggleMobileNavigation()">&#9776;</span>
+            </div>
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About BURS</a>
+                <a href="#events">Events</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <div id="mobile-sidenav" class="mobile-links">
+                <div class="mobile-logo" style="display: inline;">
+                    <a href="#home" class="logo"><img src="logo.png" alt="rescon2.0"
+                            style="width: 250px;height: 55px;padding-top: 10px;"></a>
+                    <a href=" javascript:void(0)" class="closebtn" onclick="toggleMobileNavigation()">&times;</a>
+                </div>
+                <a href="#home" onclick="toggleMobileNavigation()">Home</a>
+                <a href="#about" onclick="toggleMobileNavigation()">About BURS</a>
+                <a href="events.html" onclick="toggleMobileNavigation()">Events</a>
+                <a href="#contact" onclick="toggleMobileNavigation()">Contact Us</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="carousel">
+        <div class="photos fade" style="display: block;">
+            <img src="1.JPG" alt="1" style="height: 600px;width: 1000px; margin-left: 252px;">
+        </div>
+        <div class="photos fade" style="display: block;">
+            <img src="2.jpg" alt="2" style="height: 600px;width: 1000px; margin-left: 252px;">
+        </div>
+        <div class="photos fade" style="display: block;">
+            <img src="3.jpeg" alt="3" style="height: 600px;width: 1000px; margin-left: 252px;">
+        </div>
+        <div class="photos fade" style="display: block;">
+            <img src="4.jpeg" alt="4" style="height: 600px;width: 1000px; margin-left: 252px;">
+        </div>
+        <div class="photos fade" style="display: block;">
+            <img src="5.jpeg" alt="5" style="height: 600px;width: 1000px; margin-left: 252px;">
+        </div>
+        <div class="photos fade" style="display: block;">
+            <img src="6.jpeg" alt="6" style="height: 600px;width: 1000px; margin-left: 252px;">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)" style="margin-left: 260px;top: 290px;">❮</a>
+        <a class="next" onclick="plusSlides(1)" style="margin-right: 260px; top: 290px;">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center; margin-top: -80px; ">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <div class="about" id="about">
+        <div class="text-one">
+            <h2 style="padding-left: 30px;padding-right: 10px">About BURS</h2>
+            <p style="padding-left: 30px;padding-right: 10px">Bennett Undergraduate Research Society (BURS), is a
+                student-led organisation functioning with
+                unparalleled support from the Dean of Research and Consultancy, Dr. Rama Komaragiri, and the
+                Vice-Chancellor, Prof Prabhu Kumar Aggarwal. BURS encourages the undergraduate students to push their
+                limits and become researchers at a young age.</p>
+        </div>
+
+        <div class="ares" style="margin-bottom: 250px;margin-top: 5px;top: -230px;">
+            <h2 style="padding-left:30px;padding-right: 10px">ResCon2.0</h2>
+            <p style="padding-left: 30px;padding-right: 10px">Bennett Undergraduate Research Society (BURS) aspires to
+                assist undergraduate researchers and cultivate
+                both the fundamental knowledge and attitude for research. With this, we are delighted to announce the
+                second research conclave, BU RESCON 2.0 at Bennett University (The Times Group), which will take place
+                on the 15th , 16th and 17th of April 2023. We intend on conducting multiple research oriented events to
+                encourage students to participate and present their research work and win multiple monetary prizes and
+                goodies.</p>
+        </div>
+    </div>
+
+    <div class="events" id="events" style="top: 17px;">
+        <h1>Events at ResCon2.0</h1>
+        <div class="cards" style="top: 80px; left: -25px;">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="front.jpg" alt="Avatar" style="width: 350px;height:350px;">
+                        <div class="card-text">
+                            <h1>Undergraduate Project Expo</h1>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <ul>
+                            <h1 class="heading">Undergraduate Project Expo </h1>
+                            <li>The Undergraduate Project Expo (UPE) is an opportunity for students to present their
+                                published or unpublished research paper.</li>
+                            <li>There are four panels catering to varied interests
+                                and will evaluate two topics each and select the top 10 papers from each panel to
+                                present to
+                                our esteemed faculty panel.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="front.jpg" alt="Avatar" style="width:350px;height:350px;">
+                        <div class="card-text">
+                            <h1>Round Table Conferences</h1>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <ul>
+                            <h1>Round Table Conferences</h1>
+                            <li>After selection from the first round of registration, the top 10 participants will
+                                be invited.</li>
+                            <li>
+                                Participants will engage in a discussion and propose a solution to the given problem
+                                statement.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="front.jpg" alt="Avatar" style="width:350px;height:350px;">
+                        <div class="card-text">
+                            <h1>Research Startup Marathon</h1>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <ul>
+                            <h1>Research Startup Marathon</h1>
+                            <li>Students can form teams of up to 3 members and register their teams for Rs. 300.</li>
+                            <li>Participants can choose a problem for the team and develop a research-based startup
+                                idea.</li>
+                            <li>After completion of 24 hours, the startup will then be pitched to a judge panel.</li>
+                            <li>Participate for exciting cash prizes and funding for your projects.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" style="margin-left: 180px;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="front.jpg" alt="Avatar" style="width:350px;height:350px;">
+                        <div class="card-text">
+                            <h1>Workshops</h1>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <ul>
+                            <h1>Workshops</h1>
+                            <li>6 experts and institutes from varied fields with expansive knowledge will be invited to
+                                hold interactive workshops on upcoming developments in their respective fields.</li>
+                            <li>The workshops will provide a platform for students to learn and expand their knowledge.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" style="margin-left: 180px;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="front.jpg" alt="Avatar" style="width:350px;height:350px;">
+                        <div class="card-text">
+                            <h1>READX</h1>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <ul>
+                            <h1>READX</h1>
+                            <li>ReadX invites innovative minds to share their expertise and unique experiences.</li>
+                            <li>The event features 4 speakers colliding 4 worlds to create new ideas and insights. The
+                                event aims to help attendees broaden their horizons and learn life skills.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMobileNavigation() {
+            const mobileNavigation = document.getElementById("mobile-sidenav");
+            mobileNavigation.classList.toggle('mobile-links-active');
+        }
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("photos");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
