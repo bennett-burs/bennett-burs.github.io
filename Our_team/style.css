@@ -1,0 +1,245 @@
+body {
+  background-color: #191e27;
+  color: white;
+  font-family: "Outfit", sans-serif;
+}
+
+#main-head-container {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  align-items: center;
+  /* border: 2px solid blue; */
+}
+
+#main-heading {
+  /* font-size: 3rem; */
+  display: inline;
+  margin-top: 2vh;
+  /* border: 2px solid red; */
+  width: 82vw;
+  text-align: center;
+  font-weight: bold;
+}
+
+#main-head-container a {
+  text-decoration: none;
+}
+
+#main-head-container:hover a {
+  background: none;
+}
+
+#back {
+  display: inline-block;
+  color: white;
+  margin-top: 3vh;
+}
+
+hr {
+  opacity: 1;
+  width: 85vw;
+  margin: auto;
+}
+
+.txt-blue {
+  color: #5475ae;
+}
+
+.txt-red {
+  color: #e92b30;
+}
+
+#sub-heading {
+  margin-top: 15vh;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* CARD */
+
+.hover-main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3vh;
+  /* margin-bottom: 3vh; */
+  /* outline: 2px solid red; */
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+.card {
+  position: relative;
+  height: 400px;
+  width: 300px;
+  background-color: black;
+  transition: 0.5s;
+  border-radius: 30px;
+  margin-bottom: 3vh;
+  /* color: #fff; */
+}
+
+.face {
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.face1 {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  border: 1px solid white;
+  /* background-image: url("PRITHA.jpg"); */
+}
+
+.face1 h2 {
+  text-transform: uppercase;
+  margin-top: 210px;
+  font-size: 28px;
+}
+
+.photograph {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  opacity: 0.5;
+}
+
+.face1 p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.face1 a {
+  margin-top: 5px;
+  text-decoration: none;
+  color: #191e27;
+  padding: 5px 10px;
+  /* border: 2px solid #191E27; */
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.face1 a img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.face2 {
+  /* background-color: #191e27; */
+  /* background-image: url("img/PRITHA.jpg");
+  background-size: cover;
+  filter: blur(0.5px); */
+  /* backdrop-filter: opacity(50%); */
+  /* background-image: linear-gradient(#191e27, white); */
+  /* opacity: 0.8; */
+  transition: 0.5s;
+}
+
+#pres {
+  background-image: url("img/PRITHA.jpg");
+  background-size: cover;
+}
+
+#VP {
+  background-image: url("img/ADITI.jpg");
+  background-size: cover;
+}
+
+/* #SEC {
+  background-image: url("img/SHRUTI.png");
+  background-size: cover;
+}
+
+#COM {
+  background-image: url("img/SHIKSHA.jpg");
+  background-size: cover;
+} */
+
+.face2 h2 {
+  font-size: 30px;
+  color: #fff;
+  transition: 0.5s;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.card:hover .face2 {
+  width: 298px;
+  height: 80px;
+  border-radius: 1px;
+  top: 25px;
+  /* border: 1px solid white; */
+  /* border-style: none; */
+  /* left: 38%; */
+  /* background: transparent; */
+  /* background-color: #191E27; */
+  /* border: none; */
+}
+
+.card:hover .face2 h2 {
+  font-size: 32px;
+  color: white;
+  -webkit-text-stroke: 2px black;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* background: transparent; */
+  /* font-weight: bold; */
+}
+
+a:hover {
+  background-color: white;
+}
+
+.sub-head-container1 {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: flex;
+  justify-content: center;
+  /* outline: 2px solid red; */
+}
+
+.sub-head-container1 h1 {
+  font-weight: bold;
+}
+
+.sub-head-container1 span {
+  border: 2px solid white;
+  width: 22vw;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-head-container2 {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: flex;
+  justify-content: center;
+  /* outline: 2px solid red; */
+}
+
+.sub-head-container2 h1 {
+  font-weight: bold;
+}
+
+.sub-head-container2 span {
+  border: 2px solid white;
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+}

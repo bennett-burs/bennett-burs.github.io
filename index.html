@@ -1,246 +1,265 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Istok+Web&display=swap">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RESCON 2.0</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>ResCon2.0</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="flipdown-master/example/css/flipdown/flipdown.css">
+    <link rel="stylesheet" type="text/css" href="flipdown-master/example/css/style.css">
+    <script type="text/javascript" src="flipdown-master/example/js/flipdown/flipdown.js"></script>
+    <script type="text/javascript" src="flipdown-master/example/js/main.js"></script>
 </head>
 
+
 <body>
-    <div class="navigation">
-        <nav class="nav-container">
-            <div class="logo">
-                <a href="#home"><img src="logo.png" alt="rescon2.0"
-                        style="width: 250px;height: 55px;padding-top: 10px;"></a>
+
+    <div class="container-fluid" id="main-div">
+
+        <div class="container-fluid" id="upper-main">
+
+            <div class="container-fluid" id="main-bg">
+                <img src="img/wan-san-yip-ID1yWa1Wpx0-unsplash.jpg" alt="bg">
             </div>
-            <div class="mobile-button">
-                <span style="float: right;" onclick="toggleMobileNavigation()">&#9776;</span>
+            <div class="container-fluid" id="burs-logo">
+                <img src="img/BURS light logo transparent.png" alt="">
             </div>
-            <div class="links">
-                <a href="#home">Home</a>
-                <a href="#about">About BURS</a>
-                <a href="#events">Events</a>
-                <a href="#contact">Contact Us</a>
+            <div class="container-fluid" id="rescon-logo">
+                <img src="img/rescon-logo copy.png" alt="">
             </div>
-            <div id="mobile-sidenav" class="mobile-links">
-                <div class="mobile-logo" style="display: inline;">
-                    <a href="#home" class="logo"><img src="logo.png" alt="rescon2.0"
-                            style="width: 250px;height: 55px;padding-top: 10px;"></a>
-                    <a href=" javascript:void(0)" class="closebtn" onclick="toggleMobileNavigation()">&times;</a>
+
+            <!-- FLIP CLOCK -->
+
+            <div class="container-fluid" id="clock-bg">
+
+                <div class="container-fluid" id="clock">
+                    <div class="example">
+                        <div id="flipdown" class="flipdown"></div>
+                    </div>
                 </div>
-                <a href="#home" onclick="toggleMobileNavigation()">Home</a>
-                <a href="#about" onclick="toggleMobileNavigation()">About BURS</a>
-                <a href="events.html" onclick="toggleMobileNavigation()">Events</a>
-                <a href="#contact" onclick="toggleMobileNavigation()">Contact Us</a>
             </div>
-        </nav>
-    </div>
-
-    <div class="carousel">
-        <div class="photos fade" style="display: block;">
-            <img src="1.JPG" alt="1" style="height: 600px;width: 1000px; margin-left: 252px;">
-        </div>
-        <div class="photos fade" style="display: block;">
-            <img src="2.jpg" alt="2" style="height: 600px;width: 1000px; margin-left: 252px;">
-        </div>
-        <div class="photos fade" style="display: block;">
-            <img src="3.jpeg" alt="3" style="height: 600px;width: 1000px; margin-left: 252px;">
-        </div>
-        <div class="photos fade" style="display: block;">
-            <img src="4.jpeg" alt="4" style="height: 600px;width: 1000px; margin-left: 252px;">
-        </div>
-        <div class="photos fade" style="display: block;">
-            <img src="5.jpeg" alt="5" style="height: 600px;width: 1000px; margin-left: 252px;">
-        </div>
-        <div class="photos fade" style="display: block;">
-            <img src="6.jpeg" alt="6" style="height: 600px;width: 1000px; margin-left: 252px;">
-        </div>
-        <a class="prev" onclick="plusSlides(-1)" style="margin-left: 260px;top: 290px;">❮</a>
-        <a class="next" onclick="plusSlides(1)" style="margin-right: 260px; top: 290px;">❯</a>
-    </div>
-    <br>
-    <div style="text-align:center; margin-top: -80px; ">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-    </div>
-
-    <div class="about" id="about">
-        <div class="text-one">
-            <h2 style="padding-left: 30px;padding-right: 10px">About BURS</h2>
-            <p style="padding-left: 30px;padding-right: 10px">Bennett Undergraduate Research Society (BURS), is a
-                student-led organisation functioning with
-                unparalleled support from the Dean of Research and Consultancy, Dr. Rama Komaragiri, and the
-                Vice-Chancellor, Prof Prabhu Kumar Aggarwal. BURS encourages the undergraduate students to push their
-                limits and become researchers at a young age.</p>
         </div>
 
-        <div class="ares" style="margin-bottom: 250px;margin-top: 5px;top: -230px;">
-            <h2 style="padding-left:30px;padding-right: 10px">ResCon2.0</h2>
-            <p style="padding-left: 30px;padding-right: 10px">Bennett Undergraduate Research Society (BURS) aspires to
-                assist undergraduate researchers and cultivate
-                both the fundamental knowledge and attitude for research. With this, we are delighted to announce the
-                second research conclave, BU RESCON 2.0 at Bennett University (The Times Group), which will take place
-                on the 15th , 16th and 17th of April 2023. We intend on conducting multiple research oriented events to
-                encourage students to participate and present their research work and win multiple monetary prizes and
-                goodies.</p>
-        </div>
-    </div>
 
-    <div class="events" id="events" style="top: 17px;">
-        <h1>Events at ResCon2.0</h1>
-        <div class="cards" style="top: 80px; left: -25px;">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="front.jpg" alt="Avatar" style="width: 350px;height:350px;">
-                        <div class="card-text">
-                            <h1>Undergraduate Project Expo</h1>
+        <!-- NAVBAR -->
+
+
+
+        <ul class="container-fluid" id="navbar">
+            <a href="#navbar"><li class="container-fluid" id="nav-items">EVENTS</li></a>
+            <a href="#carousel-main"><li class="container-fluid" id="nav-items">ABOUT BURS</li></a>
+            <a href="#about-burs"><li class="container-fluid" id="nav-items">ABOUT RESCON</li></a>
+            <a href="Our_team/Team.html"><li class="container-fluid" id="nav-items">OUR TEAM</li></a>
+            <a><li class="container-fluid" id="nav-items">CONTACT US</li></a>
+        </ul>
+
+
+        <!-- CAROUSAL -->
+
+
+
+        <div class="container-fluid" id="carousel-main">
+
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+
+
+
+<!-- 
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleAutoplaying" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleAutoplaying" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleAutoplaying" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleAutoplaying" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleAutoplaying" data-slide-to="4"></li>
+                    </ol> -->
+                    
+
+
+
+
+
+
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1" data-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2" data-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3" data-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4" data-slide-to="4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5" data-slide-to="5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active c-items" id="slide-one" data-bs-interval="3000">
+                        <img src="img/UPE.webp" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption top-0 d-none d-md-block c-content">
+                            <h1 class="c-heading">UNDERGRADUATE PROJECT EXPO</h1>
+                            <hr class="c-line">
+                            <div class="row full-desc-container">
+                                <div class="col desc-container">
+                                    <p class="desc">The Undergraduate Project Expo (UPE) is an opportunity for students
+                                        to present their
+                                        published or unpublished research paper. There are four panels catering to
+                                        varied
+                                        interests and will evaluate two topics each and select the top 10 papers from
+                                        each panel
+                                        to present to our esteemed faculty panel.</p>
+                                </div>
+                                <div class="col btn-container">
+                                    <button>Schedule</button>
+                                    <button>Register</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="flip-card-back">
-                        <ul>
-                            <h1 class="heading">Undergraduate Project Expo </h1>
-                            <br>
-                            <li>Published or unpublished research work</li>
-                            <br>
-                            <li>4 Panels with 2 topics each</li><br>
-                            <li>Selection of Top 10 Papers(Offline)</li><br>
-                            <li>Prize Pool: Rs.32K</li><br>
-                            <!-- change the font and make a button here href to unstop UPE -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="front.jpg" alt="Avatar" style="width:350px;height:350px;">
-                        <div class="card-text">
-                            <h1>Round Table Conference</h1>
+                    <div class="carousel-item c-items" data-bs-interval="3000">
+                        <img src="img/RTC.jpg" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption top-0 d-none d-md-block c-content">
+                            <h1 class="c-heading">ROUND TABLE CONFERENCE</h1>
+                            <hr class="c-line">
+                            <div class="row full-desc-container">
+                                <div class="col desc-container">
+                                    <p class="desc">Participants will receive a problem statement and devise a solution
+                                        for it. They must show their comprehension of the problem during registration by
+                                        submitting a brief summary. A committee of Ph.D. scholars will select the top 10
+                                        students to attend Bennett University.</p>
+                                </div>
+                                <div class="col btn-container">
+                                    <button>Schedule</button>
+                                    <button>Register</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="flip-card-back">
-                        <ul>
-                            <h1>Round Table Conference</h1><br>
-                            <li>Solution-driven Discussion</li><br>
-                            <li>2 Rounds: Online(Unstop), Offline at BU</li><br>
-                            <li>Total No. Of Panels: 5</li><br>
-                            <li>To be Shortlisted for Offline: 50 Participants</li><br>
-                            <li>Prize Pool: Rs.25K</li><br>
-                            <!-- change the font and make a button here href to unstop RTC -->
-                            <!-- Similar Changes to be made for other Flip cards -->
-
-                            
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="front.jpg" alt="Avatar" style="width:350px;height:350px;">
-                        <div class="card-text">
-                            <h1>Research Startup Marathon</h1>
+                    <div class="carousel-item c-items" data-bs-interval="3000">
+                        <img src="img/WORKSHOPS.jpg" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption top-0 d-none d-md-block c-content">
+                            <h1 class="c-heading">WORKSHOPS</h1>
+                            <hr class="c-line">
+                            <div class="row full-desc-container">
+                                <div class="col desc-container">
+                                    <p class="desc">6 experts and institutes from varied fields with expansive knowledge
+                                        will be invited to hold interactive workshops on upcoming developments in their
+                                        respective fields. The workshops will provide a platform for students to learn
+                                        and expand their knowledge.
+                                    </p>
+                                </div>
+                                <div class="col btn-container">
+                                    <button>Schedule</button>
+                                    <button>Register</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="flip-card-back">
-                        <ul>
-                            <h1>Research Startup Marathon</h1>
-                            <li>Students can form teams of up to 3 members and register their teams for Rs. 300.</li>
-                            <li>Participants can choose a problem for the team and develop a research-based startup
-                                idea.</li>
-                            <li>After completion of 24 hours, the startup will then be pitched to a judge panel.</li>
-                            <li>Participate for exciting cash prizes and funding for your projects.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flip-card" style="margin-left: 180px;">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="front.jpg" alt="Avatar" style="width:350px;height:350px;">
-                        <div class="card-text">
-                            <h1>Workshops</h1>
+                    <div class="carousel-item c-items" data-bs-interval="3000">
+                        <img src="img/RSM.png" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption top-0 d-none d-md-block c-content">
+                            <h1 class="c-heading">RESEARCH STARTUP MARATHON</h1>
+                            <hr class="c-line">
+                            <div class="row full-desc-container">
+                                <div class="col desc-container">
+                                    <p class="desc">Students can form teams of up to 3 members and register their teams
+                                        for Rs. 300. Participants can choose a problem for the team and develop a
+                                        research-based startup idea. After completion of 24 hours, the startup will then
+                                        be pitched to a judge panel. Participate for exciting cash prizes and funding
+                                        for your projects.</p>
+                                </div>
+                                <div class="col btn-container">
+                                    <button>Schedule</button>
+                                    <button>Register</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="flip-card-back">
-                        <ul>
-                            <h1>Workshops</h1>
-                            <li>6 experts and institutes from varied fields with expansive knowledge will be invited to
-                                hold interactive workshops on upcoming developments in their respective fields.</li>
-                            <li>The workshops will provide a platform for students to learn and expand their knowledge.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flip-card" style="margin-left: 180px;">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="front.jpg" alt="Avatar" style="width:350px;height:350px;">
-                        <div class="card-text">
-                            <h1>READX</h1>
+                    <div class="carousel-item c-items" data-bs-interval="3000">
+                        <img src="img/READX.webp" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption top-0 d-none d-md-block c-content">
+                            <h1 class="c-heading">READX</h1>
+                            <hr class="c-line">
+                            <div class="row full-desc-container">
+                                <div class="col desc-container" >
+                                    <p class="desc">ReadX is a grass roots initiative that invites ingenious minds to
+                                        showcase the myriad of experiences. This event will feature 4 speakers sharing
+                                        their unique experiences, which can be described as 4 worlds colliding to create
+                                        a new big bang of ideas and insights.</p>
+                                </div>
+                                <div class="col btn-container">
+                                    <button>Schedule</button>
+                                    <button>Register</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="flip-card-back">
-                        <ul>
-                            <h1>READX</h1>
-                            <li>ReadX invites innovative minds to share their expertise and unique experiences.</li>
-                            <li>The event features 4 speakers colliding 4 worlds to create new ideas and insights. The
-                                event aims to help attendees broaden their horizons and learn life skills.
-                            </li>
-                        </ul>
-                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="container-fluid" id="about-burs">
+            <h1 class="about-heading"> <span class="txt-blue"> ABOUT </span> <span class="txt-red"> BURS </span></h1>
+            <hr class="about-line">
+            <div class="row about-container">
+                <div class="col about-desc-container">
+                    <p class="desc">Bennett Undergraduate Research Society (BURS), is a student-led organisation
+                        functioning with unparalleled support from the Dean of Research and Consultancy, Dr. Rama
+                        Komaragiri, and the Vice-Chancellor, Prof Prabhu Kumar Aggarwal. BURS encourages the
+                        undergraduate students to push their limits and become researchers at a young age.
+                    </p>
+                </div>
+                <div class="col about-image">
+                    <img src="img/About BURS.png" alt="">
                 </div>
             </div>
         </div>
+
+        <div class="container-fluid" id="about-rescon">
+            <h1 class="about-heading"> <span class="txt-blue"> ABOUT </span> <span class="txt-red"> RESCON </span></h1>
+            <hr class="about-line">
+            <div class="row about-container">
+                <div class="col about-image">
+                    <img src="img/rescon-logo copy.png" alt="">
+                </div>
+                <div class="col about-desc-container">
+                    <p class="desc">Bennett Undergraduate Research Society (BURS)  aspires to assist undergraduate
+                        researchers and cultivate both the fundamental knowledge and attitude for research. With this,
+                        we are delighted to announce the second research conclave, BU RESCON 2.0 at Bennett University
+                        (The Times Group), which will take place on the 15th , 16th and 17th  of April 2023. We intend
+                        on conducting multiple research oriented events to encourage students to participate and present
+                        their research work and win multiple monetary prizes and goodies.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
 
-    <script>
-        function toggleMobileNavigation() {
-            const mobileNavigation = document.getElementById("mobile-sidenav");
-            mobileNavigation.classList.toggle('mobile-links-active');
-        }
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("photos");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
