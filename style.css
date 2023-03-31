@@ -1,3 +1,12 @@
+.my-custom-scrollbar {
+  position: relative;
+  height: 900px;
+  overflow: auto;
+  }
+  .table-wrapper-scroll-y {
+  display: block;
+  }
+
 .container-fluid {
   margin: 0;
   padding: 0;
@@ -137,7 +146,7 @@
 
 /* NAVBAR */
 
-#navbar {
+#navbar{
   height: 15vh;
   width: 100vw;
   color: white;
@@ -162,7 +171,7 @@
   /*border: 2px solid yellow;*/
 }
 
-#nav-items {
+#nav-items , .nav-link{
   /*border: 2px solid white;*/
   margin: 0;
   /*min-width: 6vw;*/
@@ -175,6 +184,7 @@
   display: flex;
   justify-content: center;
 }
+
 
 /* CAROUSAL */
 
@@ -336,14 +346,15 @@ input[type="submit"] {
 }
 
   .modal-content {
-    background-color: #d9d9d9;
+    background-color: white;
     margin: auto;
-    padding: 20px;
+    /* padding: 20px; */
     border: 1px solid #888;
     font-family: "Outfit", sans-serif;
-    /* width: 80%; */
-    height: 100%;
+    width: 80%;
+    
     overflow-x: scroll;
+    overflow-y: scroll;
   }
 
   .footer{
@@ -402,14 +413,6 @@ input[type="submit"] {
     }
   }
 
-  @media (max-width: 500px) {
-    .c-heading {
-      font-size: 1rem;
-    }
-    .desc {
-      font-size: 0.5rem;
-    }
-  }
 
   @media (max-width: 768px) {
     #carousel-main {
@@ -428,10 +431,10 @@ input[type="submit"] {
     }
   
     .c-heading {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
     .desc {
-      font-size: 1rem;
+      font-size: 0.7rem;
     }
     /* .c-content {
       display: flex;
@@ -442,6 +445,80 @@ input[type="submit"] {
     } */
     .btn-container button {
       margin-top: 2vh;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 991px) {
+    #carousel-main {
+      height: 60vh;
+      width: 90vw;
+    }
+  
+    #carouselExampleCaptions {
+      height: 60vh;
+      width: 90vw;
+    }
+  
+    .c-items {
+      height: 60vh;
+      width: 90vw;
+    }
+
+    .c-heading {
+      font-size: 2rem;
+    }
+    .desc {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+
+    #carousel-main {
+      height: 60vh;
+      width: 90vw;
+    }
+  
+    #carouselExampleCaptions {
+      height: 60vh;
+      width: 90vw;
+    }
+  
+    .c-items {
+      height: 60vh;
+      width: 90vw;
+    }
+
+    .c-heading {
+      font-size: 2.5rem;
+    }
+    .desc {
+      font-size: 1rem;
+    }
+    
+  }
+  
+  @media (min-width: 1200px) {
+    #carousel-main {
+      height: 60vh;
+      width: 90vw;
+    }
+  
+    #carouselExampleCaptions {
+      height: 60vh;
+      width: 90vw;
+    }
+  
+    .c-items {
+      height: 60vh;
+      width: 90vw;
+    }
+
+    .c-heading {
+      font-size: 3rem;
+    }
+    .desc {
+      font-size: 1.2rem;
     }
   }
   
@@ -462,11 +539,11 @@ input[type="submit"] {
     }
   
     .c-heading {
-      font-size: 0.5rem;
+      font-size: 1rem;
     }
   
     .desc {
-      font-size: 1rem;
+      font-size: 0.7rem;
     }
   
     .btn-container button {

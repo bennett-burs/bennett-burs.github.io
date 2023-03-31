@@ -52,9 +52,43 @@
         <div class="container-fluid" id="main-bg">
           <img src="img/wan-san-yip-ID1yWa1Wpx0-unsplash.jpg" alt="bg" />
         </div>
-        <div class="container-fluid" id="burs-logo">
-          <img src="img/BURS%20light%20logo%20transparent.png" alt="" />
-        </div>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <div class="container-fluid" id="burs-logo">
+                <img src="img/BURS%20light%20logo%20transparent.png" alt="" />
+              </div>
+          </a>
+            <button class="navbar-toggler bg-light mt-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active d-md-none text-white" aria-current="page" href="#navbar">EVENTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-md-none text-white" href="#carousel-main">ABOUT BURS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-md-none text-white" href="#about-burs">ABOUT RESCON</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-md-none text-white" href="Our_team/Team.html">OUR TEAM</a>
+                </li>
+                <li class="nav-item">
+                  <a 
+                    class="nav-link d-md-none text-white" 
+                    onclick="window.scrollTo(0,document.body.scrollHeight)"
+                  >
+                  CONTACT US
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        
         <div class="container-fluid" id="rescon-logo">
           <img src="img/rescon-logo%20copy.png" alt="" />
         </div>
@@ -66,7 +100,7 @@
           </div>
         </div>
       </div>
-      <ul class="container-fluid" id="navbar">
+      <ul class="container-fluid d-none d-lg-flex" id="navbar">
         <a href="#navbar"
           ><li class="container-fluid" id="nav-items">EVENTS</li></a
         >
@@ -135,7 +169,7 @@
               data-bs-interval="3000"
             >
               <img class="d-block w-100 c-img" src="img/UPE.webp" alt="..." />
-              <div class="d-none d-md-block carousel-caption top-0 c-content">
+              <div class="carousel-caption top-0 c-content">
                 <h1 class="c-heading">UNDERGRADUATE PROJECT EXPO</h1>
                 <hr class="c-line" />
                 <div class="row full-desc-container">
@@ -170,7 +204,7 @@
             </div>
             <div class="carousel-item c-items" data-bs-interval="3000">
               <img class="d-block w-100 c-img" src="img/RTC.jpg" alt="..." />
-              <div class="d-none d-md-block carousel-caption top-0 c-content">
+              <div class="carousel-caption top-0 c-content">
                 <h1 class="c-heading">ROUND TABLE CONFERENCE</h1>
                 <hr class="c-line" />
                 <div class="row full-desc-container">
@@ -204,7 +238,7 @@
                 src="img/WORKSHOPS.jpg"
                 alt="..."
               />
-              <div class="d-none d-md-block carousel-caption top-0 c-content">
+              <div class="carousel-caption top-0 c-content">
                 <h1 class="c-heading">WORKSHOPS</h1>
                 <hr class="c-line" />
                 <div class="row full-desc-container">
@@ -228,7 +262,7 @@
             </div>
             <div class="carousel-item c-items" data-bs-interval="3000">
               <img class="d-block w-100 c-img" src="img/RSM.png" alt="..." />
-              <div class="d-none d-md-block carousel-caption top-0 c-content">
+              <div class="carousel-caption top-0 c-content">
                 <h1 class="c-heading">RESEARCH STARTUP MARATHON</h1>
                 <hr class="c-line" />
                 <div class="row full-desc-container">
@@ -259,7 +293,7 @@
             </div>
             <div class="carousel-item c-items" data-bs-interval="3000">
               <img class="d-block w-100 c-img" src="img/READX.webp" alt="..." />
-              <div class="d-none d-md-block carousel-caption top-0 c-content">
+              <div class="carousel-caption top-0 c-content">
                 <h1 class="c-heading">READX</h1>
                 <hr class="c-line" />
                 <div class="row full-desc-container">
@@ -310,7 +344,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <table class="table">
+              <table class="table table-striped">
                 <thead>
                   <tr>
                     
@@ -363,7 +397,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <table class="table">
+              <table class="table table-striped">
                 <thead>
                   <tr>
                     
@@ -452,7 +486,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <table class="table">
+              <table class="table table-striped">
                 <thead>
                   <tr>
                     
@@ -525,7 +559,8 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <table class="table">
+              <div class="table-responsive">
+              <table class="table table-striped">
                 <thead>
                   <tr>
                     
@@ -557,7 +592,7 @@
                   </tr>
                   <tr>
                     <td>15-04-23</td>
-                    <td>9:00PM-10:00P%</td>
+                    <td>9:00PM-10:00PM</td>
                     <td>Dinner</td>
                     <td>Mess</td>
                   </tr>
@@ -602,6 +637,7 @@
                 </tbody>
               </table>
             </div>
+            </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">BACK</button>
             </div>
@@ -616,7 +652,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <table class="table">
+              <table class="table table-striped">
                 <thead>
                   <tr>
                     
