@@ -81,6 +81,16 @@ hr {
   margin-bottom: 3vh;
   /* color: #fff; */
 }
+.card_3{
+  position: relative;
+  height: 400px;
+  width: 300px;
+  background-color: black;
+  transition: 0.5s;
+  border-radius: 30px;
+  margin-bottom: 3vh;
+  /* color: #fff; */
+}
 
 .face {
   border-radius: 30px;
@@ -102,8 +112,20 @@ hr {
   border: 1px solid white;
   /* background-image: url("PRITHA.jpg"); */
 }
+.face3_1 {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  border: 1px solid white;
+  /* background-image: url("PRITHA.jpg"); */
+}
 
 .face1 h2 {
+  text-transform: uppercase;
+  margin-top: 210px;
+  font-size: 28px;
+}
+.face3_1 h2 {
   text-transform: uppercase;
   margin-top: 210px;
   font-size: 28px;
@@ -117,12 +139,38 @@ hr {
   opacity: 0.5;
 }
 
+.photograph_3 {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  opacity: 0.5;
+}
+
 .face1 p {
   margin-top: 10px;
   text-align: center;
 }
 
+.face3_1 p {
+  margin-top: 10px;
+  text-align: center;
+}
+
 .face1 a {
+  margin-top: 5px;
+  text-decoration: none;
+  color: #191e27;
+  padding: 5px 10px;
+  /* border: 2px solid #191E27; */
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.face3_1 a {
   margin-top: 5px;
   text-decoration: none;
   color: #191e27;
@@ -141,14 +189,16 @@ hr {
   object-fit: cover;
 }
 
+.face3_1 a img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .face2 {
-  /* background-color: #191e27; */
-  /* background-image: url("img/PRITHA.jpg");
-  background-size: cover;
-  filter: blur(0.5px); */
-  /* backdrop-filter: opacity(50%); */
-  /* background-image: linear-gradient(#191e27, white); */
-  /* opacity: 0.8; */
+  transition: 0.5s;
+}
+.face3_2 {
   transition: 0.5s;
 }
 
@@ -162,7 +212,7 @@ hr {
   background-size: cover;
 }
 
-/* #SEC {
+#SEC {
   background-image: url("img/SHRUTI.png");
   background-size: cover;
 }
@@ -170,9 +220,55 @@ hr {
 #COM {
   background-image: url("img/SHIKSHA.jpg");
   background-size: cover;
-} */
+}
+#COP {
+  background-image: url("img/Aarushi photo.jpg");
+  background-size: cover;
+}
+#PR {
+  background-image: url("img/SHOURYA.jpg");
+  background-size: cover;
+}
+#Design {
+  background-image: url("img/DEBI.jpg");
+  background-size: cover;
+}
+#Design2 {
+  background-image: url("img/MANDEEP.jpg");
+  background-size: cover;
+}
+#CONTENT {
+  background-image: url("img/DAKSHITA.jpg");
+  background-size: cover;
+}
+#CONTENT2 {
+  background-image: url("img/SHRUTI CONTENT.jpg");
+  background-size: cover;
+}
+#CRD {
+  background-image: url("img/SARTHAK.jpg");
+  background-size: cover;
+}
+#TECH {
+  background-image: url("img/SHREEJEET.png");
+  background-size: cover;
+}
+#TECH2 {
+  background-image: url("img/MANVI.jpg");
+  background-size: cover;
+}
+#PHOTO {
+  background-image: url("img/BHARGAV.jpg");
+  background-size: cover;
+}
 
 .face2 h2 {
+  font-size: 30px;
+  color: #fff;
+  transition: 0.5s;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.face3_2 h2 {
   font-size: 30px;
   color: #fff;
   transition: 0.5s;
@@ -184,12 +280,12 @@ hr {
   height: 80px;
   border-radius: 1px;
   top: 25px;
-  /* border: 1px solid white; */
-  /* border-style: none; */
-  /* left: 38%; */
-  /* background: transparent; */
-  /* background-color: #191E27; */
-  /* border: none; */
+}
+.card_3:hover .face3_2 {
+  width: 298px;
+  height: 80px;
+  border-radius: 1px;
+  top: 25px;
 }
 
 .card:hover .face2 h2 {
@@ -198,8 +294,13 @@ hr {
   -webkit-text-stroke: 2px black;
   font-weight: bold;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  /* background: transparent; */
-  /* font-weight: bold; */
+}
+.card_3:hover .face3_2 h2 {
+  font-size: 32px;
+  color: white;
+  -webkit-text-stroke: 2px black;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 a:hover {
@@ -243,3 +344,214 @@ a:hover {
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 768px) {
+  .card {
+    height: 350px;
+    width: 250px;
+  }
+  .card_3 {
+    height: 350px;
+    width: 200px;
+  }
+
+  .card:hover .face2 {
+    width: 250px;
+    height: 80px;
+    border-radius: 1px;
+    top: 20px;
+  }
+
+  .card_3:hover .face3_2 {
+    width: 200px;
+    height: 80px;
+    border-radius: 1px;
+    top: 20px;
+  }
+  
+  
+  
+  .sub-head-container1 h1 {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .sub-head-container2 h1 {
+    font-weight: bold;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    height: 300px;
+    width: 200px;
+  }
+
+
+  
+  .card:hover .face2 {
+    width: 200px;
+    height: 80px;
+    border-radius: 1px;
+    top: 20px;
+  }
+  .card_3 {
+    height: 350px;
+    width: 170px;
+  }
+
+  .card_3:hover .face3_2 {
+    width: 170px;
+    height: 80px;
+    border-radius: 1px;
+    top: 20px;
+  }
+
+  .sub-head-container1 {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    /* outline: 2px solid red; */
+  }
+  
+  .sub-head-container1 h1 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .sub-head-container1 span {
+    border: 2px solid white;
+    width: 22vw;
+    display: flex;
+    justify-content: center;
+  }
+  .sub-head-container2 {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    /* outline: 2px solid red; */
+  }
+  
+  .sub-head-container2 h1 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .sub-head-container2 span {
+    border: 2px solid white;
+    width: 22vw;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .sub-head-container2 {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    /* outline: 2px solid red; */
+  }
+  
+  .sub-head-container2 h1 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .sub-head-container2 span {
+    border: 2px solid white;
+    width: 22vw;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 1200px) {
+  .sub-head-container2 {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    /* outline: 2px solid red; */
+  }
+  
+  .sub-head-container2 h1 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .sub-head-container2 span {
+    border: 2px solid white;
+    width: 22vw;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .face1 h2 {
+    margin-top: 180px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .face1 h2 {
+    margin-top: 150px;
+    font-size: 20px;
+  }
+  .face3_1 h2 {
+    margin-top: 150px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .face1 p {
+    font-size: 14px;
+  }
+  .face3_1 p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .face1 p {
+    font-size: 12px;
+  }
+  .face3_1 p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .face1 a {
+    font-size: 14px;
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .face1 a {
+    font-size: 12px;
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .face2 h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .face2 h2 {
+    font-size: 20px;
+  }
+}
+
+

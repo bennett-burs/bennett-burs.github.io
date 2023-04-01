@@ -46,7 +46,7 @@
     ></script>
   </head>
 
-  <body>
+  <body oncontextmenu="return false" ;>
     <div class="container-fluid" id="main-div">
       <div class="container-fluid" id="upper-main">
         <div class="container-fluid" id="main-bg">
@@ -58,37 +58,58 @@
               <div class="container-fluid" id="burs-logo">
                 <img src="img/BURS%20light%20logo%20transparent.png" alt="" />
               </div>
-          </a>
-            <button class="navbar-toggler bg-light mt-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            </a>
+            <button
+              class="navbar-toggler bg-secondary mt-5"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
               <span class="navbar-toggler-icon text-white"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active d-md-none text-white" aria-current="page" href="#navbar">EVENTS</a>
+                  <a
+                    class="nav-link active d-md-none text-white"
+                    aria-current="page"
+                    href="#navbar"
+                    >EVENTS</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link d-md-none text-white" href="#carousel-main">ABOUT BURS</a>
+                  <a class="nav-link d-md-none text-white" href="#carousel-main"
+                    >ABOUT BURS</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link d-md-none text-white" href="#about-burs">ABOUT RESCON</a>
+                  <a class="nav-link d-md-none text-white" href="#about-burs"
+                    >ABOUT RESCON</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link d-md-none text-white" href="Our_team/Team.html">OUR TEAM</a>
+                  <a
+                    class="nav-link d-md-none text-white"
+                    href="Our_team/Team.html"
+                    >OUR TEAM</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a 
-                    class="nav-link d-md-none text-white" 
+                  <a
+                    class="nav-link d-md-none text-white"
                     onclick="window.scrollTo(0,document.body.scrollHeight)"
                   >
-                  CONTACT US
+                    CONTACT US
                   </a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
-        
+
         <div class="container-fluid" id="rescon-logo">
           <img src="img/rescon-logo%20copy.png" alt="" />
         </div>
@@ -184,8 +205,12 @@
                     </p>
                   </div>
                   <div class="col btn-container">
-
-                    <button type="button" id="myBtn" data-bs-toggle="modal" data-bs-target="#UPE">
+                    <button
+                      type="button"
+                      id="myBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#UPE"
+                    >
                       Schedule
                     </button>
                     <button
@@ -197,7 +222,6 @@
 
                     <!-- Modal -->
                     <!-- Modal -->
-                    
                   </div>
                 </div>
               </div>
@@ -218,10 +242,15 @@
                     </p>
                   </div>
                   <div class="col btn-container">
-                    <button type="button" id="myBtn" data-bs-toggle="modal" data-bs-target="#round">
+                    <button
+                      type="button"
+                      id="myBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#round"
+                    >
                       Schedule
                     </button>
-                    
+
                     <button
                       id="myBtn"
                       onclick="window.location.href='https:unstop.com/o/fcbXnrk?lb=r3WRBOS'"
@@ -252,7 +281,12 @@
                     </p>
                   </div>
                   <div class="col btn-container">
-                    <button type="button" id="myBtn" data-bs-toggle="modal" data-bs-target="#workshop">
+                    <button
+                      type="button"
+                      id="myBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#workshop"
+                    >
                       Schedule
                     </button>
                     <button>Register</button>
@@ -277,10 +311,15 @@
                     </p>
                   </div>
                   <div class="col btn-container">
-                    <button type="button" id="myBtn" data-bs-toggle="modal" data-bs-target="#upm">
+                    <button
+                      type="button"
+                      id="myBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#upm"
+                    >
                       Schedule
                     </button>
-                    
+
                     <button
                       id="myBtn"
                       onclick="window.location.href='https:unstop.com/o/ArTgj5Q?lb=r3WRBOS'"
@@ -307,10 +346,15 @@
                     </p>
                   </div>
                   <div class="col btn-container">
-                    <button type="button" id="myBtn" data-bs-toggle="modal" data-bs-target="#readx">
+                    <button
+                      type="button"
+                      id="myBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#readx"
+                    >
                       Schedule
                     </button>
-                    
+
                     <button>Register</button>
                   </div>
                 </div>
@@ -336,83 +380,116 @@
           </button>
         </div>
       </div>
-      <div class="modal fade" id="UPE" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div
+        class="modal fade"
+        id="UPE"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+        >
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">UNDER GRADUATE PROJECT EXPO</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
+                UNDER GRADUATE PROJECT EXPO
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
             <div class="modal-body">
               <table class="table table-striped">
                 <thead>
                   <tr>
-                    
                     <th scope="col">DATE</th>
                     <th scope="col">Time</th>
-                    <th scope="col">Event</th> 
-                    <th scope="col">Venue</th> 
+                    <th scope="col">Event</th>
+                    <th scope="col">Venue</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    
                     <td>16-04-23</td>
                     <td>2:30PM-3:40PM</td>
-                    <td>CSE UPE</td>
+                    <td>Panel-1</td>
                     <td>108-A-CA</td>
                   </tr>
                   <tr>
                     <td>16-04-23</td>
                     <td>2:30PM-3:40PM</td>
-                    <td>LA+BAJMC UPE</td>
+                    <td>Panel-4</td>
                     <td>104-A-CA</td>
                   </tr>
                   <tr>
                     <td>17-04-23</td>
                     <td>11:40PM-1:00PM</td>
-                    <td>BIOTECH UPE</td>
+                    <td>Panel-3</td>
                     <td>204-A-CA</td>
                   </tr>
                   <tr>
                     <td>17-04-23</td>
                     <td>2:30PM-3:40PM</td>
-                    <td>LAW UPE</td>
+                    <td>Panel-2</td>
                     <td>204-A-CA</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">BACK</button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                BACK
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal fade" id="round" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div
+        class="modal fade"
+        id="round"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
         <div class="modal-dialog modal-dialog-scrollable modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">ROUND TABLE CONFERENCE</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h1
+                class="modal-title fs-5 text-center ml-5"
+                id="exampleModalLabel"
+              >
+                ROUND TABLE CONFERENCE
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
             <div class="modal-body">
               <table class="table table-striped">
                 <thead>
                   <tr>
-                    
                     <th scope="col">DATE</th>
                     <th scope="col">Time</th>
-                    <th scope="col">Event</th> 
-                    <th scope="col">Venue</th> 
+                    <th scope="col">Event</th>
+                    <th scope="col">Venue</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    
                     <td>16-04-23</td>
                     <td>2:30PM-3:40PM</td>
-                    <td>Mangement</td>
+                    <td>Management</td>
                     <td>211-A-TR</td>
                   </tr>
                   <tr>
@@ -454,7 +531,7 @@
                   <tr>
                     <td>16-04-23</td>
                     <td>8:00AM-9:00AM</td>
-                    <td>BreakFast</td>
+                    <td>Breakfast</td>
                     <td>Mess</td>
                   </tr>
                   <tr>
@@ -473,32 +550,51 @@
               </table>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">BACK</button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                BACK
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal fade" id="workshop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div
+        class="modal fade"
+        id="workshop"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+        >
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">WORKSHOPS</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
+                WORKSHOPS
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
             <div class="modal-body">
               <table class="table table-striped">
                 <thead>
                   <tr>
-                    
                     <th scope="col">DATE</th>
                     <th scope="col">Time</th>
-                    <th scope="col">Event</th> 
-                    <th scope="col">Venue</th> 
+                    <th scope="col">Event</th>
+                    <th scope="col">Venue</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    
                     <td>16-04-23</td>
                     <td>2:30PM-3:40PM</td>
                     <td>Biotech Workshop</td>
@@ -519,185 +615,222 @@
                   <tr>
                     <td>17-04-23</td>
                     <td>11:40AM-1:00PM</td>
-                    <td>Law Workshop</td>
+                    <td>LAW Workshop</td>
                     <td>108-A-CA</td>
                   </tr>
                   <tr>
                     <td>17-04-23</td>
-                    <td>2:30PM-3:40PM</td>
-                    <td>LA workshop</td>
+                    <td>3:40PM-4:40PM</td>
+                    <td>Liberal Arts workshop</td>
                     <td>301-A-LH</td>
                   </tr>
-                  
+
                   <tr>
                     <td>17-04-23</td>
-                    <td>2:30PM-3:40PM</td>
+                    <td>3:40PM-4:40PM</td>
                     <td>Management</td>
                     <td>108-A-CA</td>
                   </tr>
                   <tr>
                     <td>17-04-23</td>
-                    <td>2:30PM-3:40PM</td>
+                    <td>3:40PM-4:40PM</td>
                     <td>CSE Workshop</td>
                     <td>209-A-CA</td>
                   </tr>
-                  
                 </tbody>
               </table>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">BACK</button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                BACK
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal fade" id="upm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div
+        class="modal fade"
+        id="upm"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+        >
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">RESEARCH START-UP MARATHON</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
+                RESEARCH START-UP MARATHON
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
             <div class="modal-body">
               <div class="table-responsive">
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    
-                    <th scope="col">DATE</th>
-                    <th scope="col">Time</th>
-                    <th scope="col">Event</th> 
-                    <th scope="col">Venue</th> 
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    
-                    <td>15-04-23</td>
-                    <td>4:00PM-6:00PM</td>
-                    <td>Registration</td>
-                    <td>Main Gate</td>
-                  </tr>
-                  <tr>
-                    <td>15-04-23</td>
-                    <td>6:30PM</td>
-                    <td>Reporting Time</td>
-                    <td>B-Block, 1st Floor</td>
-                  </tr>
-                  <tr>
-                    <td>15-04-23</td>
-                    <td>7:00PM-9:00PM</td>
-                    <td>Shift 1</td>
-                    <td>B-Block, 1st Floor</td>
-                  </tr>
-                  <tr>
-                    <td>15-04-23</td>
-                    <td>9:00PM-10:00PM</td>
-                    <td>Dinner</td>
-                    <td>Mess</td>
-                  </tr>
-                  <tr>
-                    <td>15-04-23</td>
-                    <td>10:00PM-12:00AM</td>
-                    <td>Shift 2</td>
-                    <td>B-Block, 1st Floor</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>16-04-23</td>
-                    <td>12:00AM-4:00AM</td>
-                    <td>Shift 3</td>
-                    <td>B-Block, 1st Floor</td>
-                  </tr>
-                  <tr>
-                    <td>16-04-23</td>
-                    <td>4:00AM-8:00AM</td>
-                    <td>Shift 4</td>
-                    <td>B-Block, 1st Floor</td>
-                  </tr>
-                  <tr>
-                    <td>16-04-23</td>
-                    <td>8:00AM-9:00AM</td>
-                    <td>BreakFast</td>
-                    <td>Mess</td>
-                  </tr>
-                  <tr>
-                    <td>16-04-23</td>
-                    <td>9:00AM-1:00PM</td>
-                    <td>Shift 5</td>
-                    <td>B-Block, 1st Floor</td>
-                  </tr>
-                  <tr>
-                    <td>16-04-23</td>
-                    <td>1:00PM-4:00PM</td>
-                    <td>Presentation</td>
-                    <td>B-Block, 1st Floor</td>
-                  </tr>
-                  
-                </tbody>
-              </table>
-            </div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">DATE</th>
+                      <th scope="col">Time</th>
+                      <th scope="col">Event</th>
+                      <th scope="col">Venue</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>15-04-23</td>
+                      <td>4:00PM-6:00PM</td>
+                      <td>Registration</td>
+                      <td>Main Gate</td>
+                    </tr>
+                    <tr>
+                      <td>15-04-23</td>
+                      <td>6:30PM</td>
+                      <td>Reporting Time</td>
+                      <td>B-Block, 1st Floor</td>
+                    </tr>
+                    <tr>
+                      <td>15-04-23</td>
+                      <td>7:00PM-9:00PM</td>
+                      <td>Shift 1</td>
+                      <td>B-Block, 1st Floor</td>
+                    </tr>
+                    <tr>
+                      <td>15-04-23</td>
+                      <td>9:00PM-10:00PM</td>
+                      <td>Dinner</td>
+                      <td>Mess</td>
+                    </tr>
+                    <tr>
+                      <td>15-04-23</td>
+                      <td>10:00PM-12:00AM</td>
+                      <td>Shift 2</td>
+                      <td>B-Block, 1st Floor</td>
+                    </tr>
+
+                    <tr>
+                      <td>16-04-23</td>
+                      <td>12:00AM-4:00AM</td>
+                      <td>Shift 3</td>
+                      <td>B-Block, 1st Floor</td>
+                    </tr>
+                    <tr>
+                      <td>16-04-23</td>
+                      <td>4:00AM-8:00AM</td>
+                      <td>Shift 4</td>
+                      <td>B-Block, 1st Floor</td>
+                    </tr>
+                    <tr>
+                      <td>16-04-23</td>
+                      <td>8:00AM-9:00AM</td>
+                      <td>BreakFast</td>
+                      <td>Mess</td>
+                    </tr>
+                    <tr>
+                      <td>16-04-23</td>
+                      <td>9:00AM-1:00PM</td>
+                      <td>Shift 5</td>
+                      <td>B-Block, 1st Floor</td>
+                    </tr>
+                    <tr>
+                      <td>16-04-23</td>
+                      <td>1:00PM-4:00PM</td>
+                      <td>Presentation</td>
+                      <td>B-Block, 1st Floor</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">BACK</button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                BACK
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal fade" id="readx" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div
+        class="modal fade"
+        id="readx"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+        >
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">READX</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
+                READX
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
             <div class="modal-body">
               <table class="table table-striped">
                 <thead>
                   <tr>
-                    
                     <th scope="col">DATE</th>
                     <th scope="col">Time</th>
-                    <th scope="col">Event</th> 
-                    <th scope="col">Venue</th> 
+                    <th scope="col">Event</th>
+                    <th scope="col">Venue</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    
                     <td>16-04-23</td>
                     <td>11:00AM-1:00PM</td>
                     <td>READX 1</td>
                     <td>002-A-LH</td>
                   </tr>
                   <tr>
-                    
                     <td>16-04-23</td>
-                    <td>3:40AM-4:40PM</td>
+                    <td>3:40PM-4:40PM</td>
                     <td>READX 2</td>
                     <td>002-A-LH</td>
                   </tr>
                   <tr>
-                    
                     <td>17-04-23</td>
                     <td>10:30AM-11:40AM</td>
                     <td>READX 3</td>
                     <td>002-A-LH</td>
                   </tr>
                   <tr>
-                    
                     <td>17-04-23</td>
-                    <td>3:40AM-4:40AM</td>
+                    <td>2:00PM-3:40PM</td>
                     <td>READX 4</td>
                     <td>002-A-LH</td>
                   </tr>
-                  
-                  
                 </tbody>
               </table>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">BACK</button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                BACK
+              </button>
             </div>
           </div>
         </div>
@@ -749,34 +882,50 @@
           </div>
         </div>
       </div>
-      <footer class="text-white bg-dark footer">
+      <footer class="text-white footer">
         <div class="container py-4 py-lg-5">
           <div class="row justify-content-center">
             <div
               class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column"
             >
-              <h3 class="fs-6 text-white">About</h3>
+              <h3 class="text-white">About</h3>
               <ul class="list-unstyled">
-                <li><a class="link-light" href="#about-burs">BURS</a></li>
                 <li>
-                  <a class="link-light" href="http://www.rescon.me"
+                  <a
+                    class="link-light"
+                    href="#about-burs"
+                    style="text-decoration: none"
+                    >BURS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-light"
+                    href="https://www.rescon.live"
+                    style="text-decoration: none"
                     >ResCon2.0</a
                   >
                 </li>
                 <li>
-                  <a class="link-light" href="Our_team/Team.html">Team</a>
+                  <a
+                    class="link-light"
+                    href="Our_team/Team.html"
+                    style="text-decoration: none"
+                    >Team</a
+                  >
                 </li>
               </ul>
             </div>
             <div
               class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column"
             >
-              <h3 class="fs-6 text-white">Registration Links</h3>
+              <h3 class="text-white">Registration Links</h3>
               <ul class="list-unstyled">
                 <li>
                   <a
                     class="link-light"
                     href="https://unstop.com/o/8mVlgJU?lb=r3WRBOS"
+                    style="text-decoration: none"
                     >Undergraduate Project Expo</a
                   >
                 </li>
@@ -784,12 +933,14 @@
                   <a
                     class="link-light"
                     href="https://unstop.com/o/ArTgj5Q?lb=r3WRBOS"
+                    style="text-decoration: none"
                     >Research Startup Marathon</a
                   >
                 </li>
                 <li>
                   <a
                     class="link-light"
+                    style="text-decoration: none"
                     href="https://unstop.com/o/fcbXnrk?lb=r3WRBOS"
                     >Round Table Conference</a
                   >
@@ -808,13 +959,17 @@
                   placeholder="Your Email"
                   style="margin-bottom: 10px"
                 /><br />
-                <input type="submit" value="Submit" />
+                <input
+                  type="submit"
+                  value="Submit"
+                  style="color: black;"
+                />
               </form>
             </div>
             <div
               class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column"
             >
-              <h3 class="fs-6 text-white">Contact Us</h3>
+              <h3 class="text-white">Contact Us</h3>
               <ul class="list-unstyled">
                 <li>
                   <span class="link-light">Benentt University</span><br />
@@ -868,7 +1023,7 @@
           </div>
           <hr />
           <div class="d-flex justify-content-between align-items-center pt-3">
-            <p class="mb-0">Copyright © 2023 BURS</p>
+            <p class="mb-0">Contributed by Tech Team of BURS❤️</p>
             <ul class="list-inline mb-0">
               <li class="list-inline-item">
                 <svg
@@ -917,13 +1072,50 @@
         </div>
       </footer>
       <footer class="text-center bg-dark"></footer>
-
-      
-
-      
     </div>
-    
+
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+          return false;
+        }
+        if (
+          e.ctrlKey &&
+          e.shiftKey &&
+          (e.keyCode == "I".charCodeAt(0) || e.keyCode == "i".charCodeAt(0))
+        ) {
+          return false;
+        }
+        if (
+          e.ctrlKey &&
+          e.shiftKey &&
+          (e.keyCode == "C".charCodeAt(0) || e.keyCode == "c".charCodeAt(0))
+        ) {
+          return false;
+        }
+        if (
+          e.ctrlKey &&
+          e.shiftKey &&
+          (e.keyCode == "J".charCodeAt(0) || e.keyCode == "j".charCodeAt(0))
+        ) {
+          return false;
+        }
+        if (
+          e.ctrlKey &&
+          (e.keyCode == "U".charCodeAt(0) || e.keyCode == "u".charCodeAt(0))
+        ) {
+          return false;
+        }
+        if (
+          e.ctrlKey &&
+          (e.keyCode == "S".charCodeAt(0) || e.keyCode == "s".charCodeAt(0))
+        ) {
+          return false;
+        }
+      };
+    </script>
   </body>
 </html>
