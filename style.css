@@ -354,8 +354,16 @@ input[type="submit"] {
   overflow-y: scroll;
 }
 
+
+
 .footer {
   margin-top: 15vh;
+}
+
+.bennett {
+  position: relative;
+  left: 1150px;
+  width: 150px !important;
 }
 
 .modal-title {
@@ -527,6 +535,13 @@ input[type="submit"] {
     width: 90vw;
   }
 
+  .bennett{
+    width: 100px;
+    position: relative;
+    left: 20px;
+  }
+
+  
   #carouselExampleCaptions {
     height: 50vh;
     width: 90vw;
